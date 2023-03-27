@@ -40,7 +40,8 @@ def introduce():
 print(introduce())
 
 #9
-def calc(a,b):
-    return a+b, a-b, a*b, a//b
-A,B,C,D = calc(int(input("첫 번째 수를 입력하세요 : ")),int(input("두 번쨰 수를 입력하세요 : ")))
-print("두 수의 합 :",A ,"\n두 수의 차 :",B ,"\n두 수의 곱 :",C ,"\n두 수의 몫 :",D)
+def calc():
+    a ,b=input("첫 번째 수를 입력하세요 : "), input("두 번째 수를 입력하세요 : ")
+    a, b=int(a), int(b)
+    print(f"두 수의 합 : {a+b}\n두 수의 차 : {a-b}\n두 수의 곱 : {a*b}\n두 수의 몫 : {a//b}")
+    return
